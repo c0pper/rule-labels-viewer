@@ -22,14 +22,14 @@ navmenu = [("#hero", "bx bx-home", "Home"),
 lang_skills = [("english", 100), ("Russian", 70), ("SPANISH", 30), ("FRENCH", 30), ("JAPANESE", 20)]
 comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS", 50), ("CSS", 30)]
 
-projects = [("The Karman Line", "portfolio-1.jpg", "karman-line"),
-("This website. Like it's '95.", "portfolio-1.jpg", "win95-site"),
-("SpaceX Website italian localisation", "portfolio-1.jpg", "spacex-it"),
-("GTA Napoli", "portfolio-1.jpg", "gta-napoli"),
-("Unidia", "portfolio-1.jpg", "unidia"),
-("'Mirai' Substitles", "portfolio-1.jpg", "mirai-subs"),
-("'Clients' localisation", "portfolio-1.jpg", "clients-app"),
-("'NMusic' localisation", "portfolio-1.jpg", "nmusic-app")
+projects = [("The Karman Line", "karman.png", "karman-line"),
+("This website. Like it's '95.", "win95.png", "win95-site"),
+("SpaceX Website italian localisation", "spacex.png", "spacex-it"),
+("GTA Napoli", "gta.png", "gta-napoli"),
+("Unidia", "unidia.png", "unidia"),
+("'Mirai' Substitles", "mirai.png", "mirai-subs"),
+("'Clients' localisation", "clients.png", "clients-app"),
+("'NMusic' localisation", "nmusic.png", "nmusic-app")
 ]
 
 
