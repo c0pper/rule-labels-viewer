@@ -23,13 +23,13 @@ lang_skills = [("english", 100), ("Russian", 70), ("SPANISH", 30), ("FRENCH", 30
 comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS", 50), ("CSS", 30)]
 
 projects = [("The Karman Line", "portfolio-1.jpg", "karman-line"),
-("This website. Like it's '95.", "portfolio-1.jpg", "karman-line"),
-("SpaceX Website italian localisation", "portfolio-1.jpg", "karman-line"),
-("GTA Napoli", "portfolio-1.jpg", "karman-line"),
-("Unidia", "portfolio-1.jpg", "karman-line"),
-("'Mirai' Substitles", "portfolio-1.jpg", "karman-line"),
-("'Clients' localisation", "portfolio-1.jpg", "karman-line"),
-("'NMusic' localisation", "portfolio-1.jpg", "karman-line")
+("This website. Like it's '95.", "portfolio-1.jpg", "win95-site"),
+("SpaceX Website italian localisation", "portfolio-1.jpg", "spacex-it"),
+("GTA Napoli", "portfolio-1.jpg", "gta-napoli"),
+("Unidia", "portfolio-1.jpg", "unidia"),
+("'Mirai' Substitles", "portfolio-1.jpg", "mirai-subs"),
+("'Clients' localisation", "portfolio-1.jpg", "clients-app"),
+("'NMusic' localisation", "portfolio-1.jpg", "nmusic-app")
 ]
 
 
@@ -57,12 +57,75 @@ def home():
 
 
 @app.route("/karman-line")
-def base():
+def karman():
     return render_template("karman-line.html",
     title="The Karman Line",
     copyright_year=current_year,
     navmenu=navmenu,
     data=karman_line
+    )
+
+@app.route("/win95-site")
+def win95():
+    return render_template("win95-site.html",
+    title="This website Windows 95ed",
+    copyright_year=current_year,
+    navmenu=navmenu,
+    data=win95_site
+    )
+
+@app.route("/spacex-it")
+def spacex():
+    return render_template("spacex-it.html",
+    title="SpaceX Italian Localisation",
+    copyright_year=current_year,
+    navmenu=navmenu,
+    data=spacex_it
+    )
+
+@app.route("/gta-napoli")
+def gta():
+    return render_template("gta-napoli.html",
+    title="GTA Napoli",
+    copyright_year=current_year,
+    navmenu=navmenu,
+    data=gta_napoli
+    )
+
+@app.route("/unidia")
+def uni():
+    return render_template("unidia.html",
+    title="Unidia",
+    copyright_year=current_year,
+    navmenu=navmenu,
+    data=unidia
+    )
+
+@app.route("/mirai-subs")
+def mirai():
+    return render_template("mirai-subs.html",
+    title="Mirai Subtitles",
+    copyright_year=current_year,
+    navmenu=navmenu,
+    data=mirai_subs
+    )
+
+@app.route("/clients-app")
+def clients():
+    return render_template("clients-app.html",
+    title="Clients App Localisation",
+    copyright_year=current_year,
+    navmenu=navmenu,
+    data=clients_app
+    )
+
+@app.route("/nmusic-app")
+def nmusic():
+    return render_template("nmusic-app.html",
+    title="NMusic App Localisation",
+    copyright_year=current_year,
+    navmenu=navmenu,
+    data=nmusic_app
     )
 
 
