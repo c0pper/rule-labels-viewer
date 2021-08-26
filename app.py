@@ -31,7 +31,7 @@ projects = [("The Karman Line", "karman.png", "karman-line"),
 ("'Clients' localisation", "clients.png", "clients-app"),
 ("'NMusic' localisation", "nmusic.png", "nmusic-app")
 ]
-
+ 
 
 def calculateAge(birthDate):
     today = date.today()
