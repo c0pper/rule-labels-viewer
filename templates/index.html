@@ -16,7 +16,7 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>I work in translation, teaching and new technologies. I am currently working at <a href="https://www.expert.ai/">Expert.AI</a>, where I am a Knowledge Engineer in our Financed Projects division. <br><br>
+          <p>I work in translation, teaching and new technologies. I am currently working at <a href="https://www.expert.ai/" target="_blank">Expert.AI</a>, where I am a Knowledge Engineer in our Financed Projects division. <br><br>
             Before joining Expert.AI, I have been teaching English in a bilingual kindergarten and prior to that I have worked with English summer schools in Bournemouth and Brighton(UK) covering the role of Activity Leader, Academic Intern and Student Services.<br><br>
           Prior to approaching the world of computational linguistics I wrote a thesis about the benefits of a SEO-based approach to website localisation, offering a concrete example of localised website.<br><br>
           In my spare time I like to learn new skills, especially in the field of coding. Automating boring tasks with python is one of my favourite pastimes and this very website is me figuring out the Flask framework.</p>
@@ -35,7 +35,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4 September 1993</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{email}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><p><a href="mailto:{{email}}">{{email}}</a></p></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Napoli, IT</span></li>
                 </ul>
               </div>
@@ -168,7 +168,7 @@
               <div class="resume-item">
                 <h4>{{e["name"]}}</h4>
                 <h5>{{e["date"]}}</h5>
-                <p><em><a href="{{e['url']}}">{{e["institution"]}}</a>{{e["location"]}}</em></p>
+                <p><em><a href="{{e['url']}}" target="_blank">{{e["institution"]}}</a>{{e["location"]}}</em></p>
                 <ul>
                   {% for p in e["points"] %}
                     <li>{{p}}</li>
@@ -186,7 +186,7 @@
               <div class="resume-item">
                 <h4>{{e["name"]}}</h4>
                 <h5>{{e["date"]}}</h5>
-                <p><em><a href="{{e['url']}}">{{e["institution"]}}</a>{{e["location"]}}</em></p>
+                <p><em><a href="{{e['url']}}" target="_blank">{{e["institution"]}}</a>{{e["location"]}}</em></p>
                 <ul>
                   {% for p in e["points"] %}
                     <li>{{p}}</li>
@@ -304,7 +304,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="{{ url_for('static', filename='img/testimonials/nathan.jpg') }}" class="testimonial-img" alt="">
-                <h3><a href="http://simonemartinmarotta.atwebpages.com/files/StGiles_appraisal.pdf">Nathan Price</a></h3>
+                <h3><a href="http://simonemartinmarotta.atwebpages.com/files/StGiles_appraisal.pdf" target="_blank">Nathan Price</a></h3>
                 <h4>St Giles Centre Manager</h4>
               </div>
             <!-- </div> -->
@@ -318,7 +318,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="{{ url_for('static', filename='img/testimonials/suzie.jpg') }}" class="testimonial-img" alt="">
-                <h3><a href="http://simonemartinmarotta.atwebpages.com/files/reference%20letter%20blc.pdf">Suzie Hayes Fisher</a></h3>
+                <h3><a href="http://simonemartinmarotta.atwebpages.com/files/reference%20letter%20blc.pdf" target="_blank">Suzie Hayes Fisher</a></h3>
                 <h4>Brighton Language College HR</h4>
               </div>
             <!-- </div> -->
@@ -353,7 +353,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>{{email}}</p>
+                <p><a href="mailto:{{email}}">{{email}}</a></p>
               </div>
 
               <div class="phone">

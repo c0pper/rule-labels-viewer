@@ -14,6 +14,14 @@ email = "martin.s.marotta@gmail.com"
 location = "Naples, IT"
 skype = "martin.s.marotta@gmail.com"
 
+social_buttons = [
+    #url, href class, i class
+    ("https://github.com/c0pper/", "github", "bx bxl-github"),
+    ("https://www.instagram.com/sim01110011.01101001.01101101/", "instagram", "bx bxl-instagram"),
+    ("https://www.youtube.com/channel/UCtUNRX-B_j2ipkL1Lihih8w/", "youtube", "bx bxl-youtube"),
+    ("https://www.facebook.com/Simooon/", "facebook", "bx bxl-facebook")
+]
+
 navmenu = [
     ("#hero", "bx bx-home", "Home"),
     ("#about", "bx bx-user", "About"),
@@ -50,6 +58,7 @@ def home():
     return render_template(
         "index.html",
         title=title,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         email=email,
         location=location,
@@ -70,6 +79,7 @@ def karman():
         "karman-line.html",
         title="The Karman Line",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=karman_line
     )
@@ -80,6 +90,7 @@ def win95():
         "win95-site.html",
         title="This website Windows 95ed",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=win95_site
     )
@@ -90,6 +101,7 @@ def spacex():
         "spacex-it.html",
         title="SpaceX Italian Localisation",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=spacex_it
     )
@@ -100,6 +112,7 @@ def gta():
         "gta-napoli.html",
         title="GTA Napoli",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=gta_napoli
     )
@@ -110,6 +123,7 @@ def uni():
         "unidia.html",
         title="Unidia",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=unidia
     )
@@ -120,6 +134,7 @@ def mirai():
         "mirai-subs.html",
         title="Mirai Subtitles",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=mirai_subs
     )
@@ -130,6 +145,7 @@ def clients():
         "clients-app.html",
         title="Clients App Localisation",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=clients_app
     )
@@ -140,6 +156,7 @@ def nmusic():
         "nmusic-app.html",
         title="NMusic App Localisation",
         copyright_year=current_year,
+        social_buttons=social_buttons,
         navmenu=navmenu,
         data=nmusic_app
     )

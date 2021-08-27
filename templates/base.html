@@ -42,11 +42,9 @@
         <img src="{{ url_for('static', filename='img/profile-img.jpg') }}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="/">Simone Martin</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          {% for b in social_buttons %}
+            <a href="{{b[0]}}" target="_blank" class="{{b[1]}}"><i class="{{b[2]}}"></i></a>
+          {% endfor %}
         </div>
       </div>
 
