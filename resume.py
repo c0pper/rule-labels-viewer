@@ -31,10 +31,10 @@ ed_experiences = [
         "institution": "Università degli Studi di Naples L’Orientale",
         "location": ", Naples (IT)",
         "points": [
-            "Graduated 102/110",
-            "Promotion of activities related to multilingualism and interculturalism",
-            "Teaching language learning techniques",
-            "Digital texts localization and CAT tools"
+            "Antropology",
+            "Pedagogy",
+            "Teaching to migrants",
+            "Teaching to people with special needs"
         ],
         "url": "https://www.unior.it/"
     },
