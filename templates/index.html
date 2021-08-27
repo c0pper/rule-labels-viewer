@@ -157,140 +157,44 @@
               <h4>Simone Martin</h4>
               <p><em>I deal with translation, teaching and new technologies. I am looking for an environment in which to share my skills and continue to improve myself.</em></p>
               <ul>
-                <li>Based in Naples, IT</li>
-                <li>martin.s.marotta@gmail.com</li>
+                <li>Based in {{location}}</li>
+                <li>{{email}}</li>
               </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master's Degree - Technical Translation</h4>
-              <h5>2017 - 2020</h5>
-              <p><em>Università degli Studi di Napoli L’Orientale, Napoli (IT)</em></p>
-              <ul>
-                <li>Graduated 110/110</li>
-                <li>Skills in specialized and professional texts translation</li>
-                <li>Awareness of phenomena related to interaction of cultures</li>
-                <li>Optimization of work through the use of IT resources</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Apple iOS Foundation Program</h4>
-              <h5>2018</h5>
-              <p><em>Università degli Studi di Napoli L’Orientale, Napoli (IT)</em></p>
-              <ul>
-                <li>First place in admission list</li>
-                <li>Developement of publishable app in 1 month (Swift)</li>
-                <li>Demo of the product at European Researchers’ Night ‘19, national science fair “Futuro Remoto” and Universirty of Westminster (London)</li>
-                <li>Honing of soft / hard skills and team working</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>FIT - INITIAL FORMATION AND TRAINEESHIP FOR TEACHERS</h4>
-              <h5>2018</h5>
-              <p><em>Università degli Studi di Napoli L’Orientale, Napoli (IT)</em></p>
-              <ul>
-                <li>Anthropology</li>
-                <li>Pedagogy</li>
-                <li>Teaching to migrants</li>
-                <li>Teaching to people with special needs</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>BA - Linguistic and Cultural Mediation</h4>
-              <h5>2012 - 2016</h5>
-              <p><em>Università degli Studi di Napoli L’Orientale, Napoli (IT)</em></p>
-              <ul>
-                <li>Graduated 102/110</li>
-                <li>Promotion of activities related to multilingualism and interculturalism</li>
-                <li>Teaching language learning techniques</li>
-                <li>Digital texts localization and CAT tools</li>
-              </ul>
-            </div>
-          </div>
 
+            {% for e in ed_experiences %}
+              <div class="resume-item">
+                <h4>{{e["name"]}}</h4>
+                <h5>{{e["date"]}}</h5>
+                <p><em><a href="{{e['url']}}">{{e["institution"]}}</a>{{e["location"]}}</em></p>
+                <ul>
+                  {% for p in e["points"] %}
+                    <li>{{p}}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>KNOWLEDGE Engineer</h4>
-              <h5>2021 - Present</h5>
-              <p><em><a href="https://www.expert.ai">Expert.AI</a>, Napoli (IT)</em></p>
-              <ul>
-                <li>Development of semantic rules that provide the best results in order to meet customer expectations</li>
-                <li>Identification of logical patterns underlying the language</li>
-                <li>Improvement of the basic technology from a linguistic point of view</li>
-                <li>Tests and validations to verify the effectiveness of the implemented solution</li>
-                <li>Identification of suitable solutions for clients in the field of Natural Language Processing</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>ENGLISH TEACHER</h4>
-              <h5>2021</h5>
-              <p><em>Istituto Scolastico Sant'Agostino, Aversa (IT) </em></p>
-              <ul>
-                <li>Planning and delivering English lessons for kindergarten learners</li>
-                <li>Utilising classroom management techniques to improve efficiency of lessons</li>
-                <li>Enriching the lesson by including additional audio-visual material</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>MUSIC VIDEO TECHNICAL ASSISTANT</h4>
-              <h5>2020</h5>
-              <p><em><a href="https://www.youtube.com/watch?v=0a0jhmPL-Io">Stre_musica</a></em></p>
-              <ul>
-                <li>Creation of animated clips from still photos using AI</li>
-                <li>Technical consultation and editing assistance</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>FREELANCE TRANSLATOR</h4>
-              <h5>2019</h5>
-              <p><em><a href="https://www.upwork.com/">Upwork</a></em></p>
-              <ul>
-                <li>Italian localisation of <a href="https://apps.apple.com/us/app/clients-your-client-database/id1188807211">Clients app</a> for iOS</li>
-                <li>Italian localisation of <a href="https://play.google.com/store/apps/details?id=com.cnj.nplayer&hl=it">N Music</a> for Android</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>ACTIVITY LEADER</h4>
-              <h5>2019</h5>
-              <p><em><a href="https://www.stgiles-international.com/">St. Giles Juniors, Bournemouth (UK)</a></em></p>
-              <ul>
-                <li>Welcoming students and orientation</li>
-                <li>Monitoring welfare and discipline</li>
-                <li>Leading activities and groups during excursions</li>
-                <li>Encouraging engagement in social programme</li>
-                <li>Supervising arrivals/departures</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>ACADEMIC INTERN</h4>
-              <h5>2018</h5>
-              <p><em><a href="https://www.stgiles-international.com/">Brighton Language College</a>, Brighton (UK)</em></p>
-              <ul>
-                <li>Teacher assistance</li>
-                <li>Groups coordination</li>
-                <li>Orientation</li>
-                <li>Cultural mediation</li>
-                <li>Excursions guide</li>
-                <li>Children supervision</li>
-                <li>Lesson planning</li>
-                <li>Attendance keeping</li>
-                <li>Database updating</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>RECEPTION DESK</h4>
-              <h5>2015</h5>
-              <p><em>Naples Immigration Office (IT)</em></p>
-              <ul>
-                <li>Issuing residence permit to non-EU citizens</li>
-                <li>Cultural mediation</li>
-                <li>Database updating</li>
-                <li>Reception</li>
-              </ul>
-            </div>
+
+            {% for e in w_experiences %}
+              <div class="resume-item">
+                <h4>{{e["name"]}}</h4>
+                <h5>{{e["date"]}}</h5>
+                <p><em><a href="{{e['url']}}">{{e["institution"]}}</a>{{e["location"]}}</em></p>
+                <ul>
+                  {% for p in e["points"] %}
+                    <li>{{p}}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+
           </div>
         </div>
 
