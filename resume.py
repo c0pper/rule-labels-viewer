@@ -23,7 +23,7 @@ ed_experiences = [
             "Demo of the product at European Researchers’ Night ‘19, national science fair “Futuro Remoto” and Universirty of Westminster (London)",
             "Honing of soft / hard skills and team working"
         ],
-        "url": "https://www.unior.it/"
+        "url": "https://www.unior.it/" 
     },
     {
         "name": "FIT - INITIAL FORMATION AND TRAINEESHIP FOR TEACHERS",
