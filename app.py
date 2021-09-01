@@ -1,8 +1,7 @@
-from flask import Flask, redirect, url_for, render_template
+from flask import Flask, render_template
 from datetime import date
 from resume import ed_experiences, w_experiences
 from project_details import *
-
 
 app = Flask(__name__)
 
@@ -15,7 +14,7 @@ location = "Naples, IT"
 skype = "martin.s.marotta@gmail.com"
 
 social_buttons = [
-    #url, href class, i class
+    # url, href class, i class
     ("https://github.com/c0pper/", "github", "bx bxl-github"),
     ("https://www.instagram.com/sim01110011.01101001.01101101/", "instagram", "bx bxl-instagram"),
     ("https://www.youtube.com/channel/UCtUNRX-B_j2ipkL1Lihih8w/", "youtube", "bx bxl-youtube"),
@@ -34,8 +33,13 @@ navmenu = [
 lang_skills = [("english", 100), ("Russian", 70), ("SPANISH", 30), ("FRENCH", 30), ("JAPANESE", 20)]
 comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS", 50), ("CSS", 30)]
 
-projects = [
-    ("The Karman Line", "karman.png", "karman-line"),
+projects = [  # Title, img, url
+    ("ZettiBotAI", "karman.png", "zettibot-ai"),
+    ("This Website", "karman.png", "personal-website"),
+    ("pyCV", "karman.png", "py-cv"),
+    ("Anime Downloader", "karman.png", "anime-downloader"),
+    ("Text Collection", "karman.png", "text-collection"),
+    (zettibot["title"], "karman.png", "karman-line"),
     ("This website. Like it's '95.", "win95.png", "win95-site"),
     ("SpaceX Website italian localisation", "spacex.png", "spacex-it"),
     ("GTA Napoli", "gta.png", "gta-napoli"),
@@ -44,12 +48,12 @@ projects = [
     ("'Clients' localisation", "clients.png", "clients-app"),
     ("'NMusic' localisation", "nmusic.png", "nmusic-app")
 ]
- 
+
 
 def calculateAge(birthDate):
     today = date.today()
     age = today.year - birthDate.year - ((today.month, today.day) < (birthDate.month, birthDate.day))
- 
+
     return age
 
 
@@ -73,88 +77,155 @@ def home():
     )
 
 
+@app.route("/zettibot-ai")
+def zettibot_ai():
+    return render_template(
+        "karman-line.html",
+        title=zettibot["title"],
+        copyright_year=current_year,
+        social_buttons=social_buttons,
+        navmenu=navmenu,
+        data=zettibot
+    )
+
+
+@app.route("/personal-website")
+def personal_website():
+    return render_template(
+        "karman-line.html",
+        title=pers_website["title"],
+        copyright_year=current_year,
+        social_buttons=social_buttons,
+        navmenu=navmenu,
+        data=pers_website
+    )
+
+
+@app.route("/py-cv")
+def pyCV():
+    return render_template(
+        "karman-line.html",
+        title=python_cv["title"],
+        copyright_year=current_year,
+        social_buttons=social_buttons,
+        navmenu=navmenu,
+        data=python_cv
+    )
+
+
+@app.route("/anime-downloader")
+def anime_downloader():
+    return render_template(
+        "karman-line.html",
+        title=anime_scraper["title"],
+        copyright_year=current_year,
+        social_buttons=social_buttons,
+        navmenu=navmenu,
+        data=anime_scraper
+    )
+
+
+@app.route("/text-collection")
+def text_collection():
+    return render_template(
+        "karman-line.html",
+        title=text_collect["title"],
+        copyright_year=current_year,
+        social_buttons=social_buttons,
+        navmenu=navmenu,
+        data=text_collect
+    )
+
+
 @app.route("/karman-line")
 def karman():
     return render_template(
         "karman-line.html",
-        title="The Karman Line",
+        title=karman_line["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,
         data=karman_line
     )
 
+
 @app.route("/win95-site")
 def win95():
     return render_template(
         "win95-site.html",
-        title="This website Windows 95ed",
+        title=win95_site["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,
         data=win95_site
     )
 
+
 @app.route("/spacex-it")
 def spacex():
     return render_template(
         "spacex-it.html",
-        title="SpaceX Italian Localisation",
+        title=spacex_it["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,
         data=spacex_it
     )
 
+
 @app.route("/gta-napoli")
 def gta():
     return render_template(
         "gta-napoli.html",
-        title="GTA Napoli",
+        title=gta_napoli["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,
         data=gta_napoli
     )
 
+
 @app.route("/unidia")
 def uni():
     return render_template(
         "unidia.html",
-        title="Unidia",
+        title=unidia["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,
         data=unidia
     )
 
+
 @app.route("/mirai-subs")
 def mirai():
     return render_template(
         "mirai-subs.html",
-        title="Mirai Subtitles",
+        title=mirai_subs["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,
         data=mirai_subs
     )
 
+
 @app.route("/clients-app")
 def clients():
     return render_template(
         "clients-app.html",
-        title="Clients App Localisation",
+        title=clients_app["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,
         data=clients_app
     )
 
+
 @app.route("/nmusic-app")
 def nmusic():
     return render_template(
         "nmusic-app.html",
-        title="NMusic App Localisation",
+        title=nmusic_app["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
         navmenu=navmenu,

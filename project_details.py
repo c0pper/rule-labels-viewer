@@ -1,4 +1,70 @@
+zettibot = {
+    "title": "ZettiBot AI",
+    "cat": "Python, AI",
+    "date": "2020",
+    "url": "https://telegram.me/zettibot",
+    "desc": "Check out my insulting bot on Telegram @zettibot",
+    "images": [
+        "portfolio-details-1.jpg",
+        "portfolio-details-2.jpg",
+        "portfolio-details-3.jpg",
+        "portfolio-details-2.jpg"]
+}
+
+pers_website = {
+    "title": "This website",
+    "cat": "Web design",
+    "date": "2021",
+    "url": "https://simone-martin.herokuapp.com/",
+    "desc": "This website was built with Python, Bootstrap and Flask.",
+    "images": [
+        "portfolio-details-1.jpg",
+        "portfolio-details-2.jpg",
+        "portfolio-details-3.jpg",
+        "portfolio-details-2.jpg"]
+}
+
+python_cv = {
+    "title": "Curriculum Vitae Builder",
+    "cat": "Python",
+    "date": "2021",
+    "url": "https://github.com/c0pper/pyCV",
+    "desc": "A python script that builds my CV in pdf format starting from structured data.",
+    "images": [
+        "portfolio-details-1.jpg",
+        "portfolio-details-2.jpg",
+        "portfolio-details-3.jpg",
+        "portfolio-details-2.jpg"]
+}
+
+anime_scraper = {
+    "title": "Anime Episodes Scraper",
+    "cat": "Python",
+    "date": "2021",
+    "url": "https://github.com/c0pper/animewatdownloader",
+    "desc": "A simple script that scrapes episodes download links from a specific website and donwloads them, starting from a list of URLs.",
+    "images": [
+        "portfolio-details-1.jpg",
+        "portfolio-details-2.jpg",
+        "portfolio-details-3.jpg",
+        "portfolio-details-2.jpg"]
+}
+
+text_collect = {
+    "title": "Text Collection for AI analysis",
+    "cat": "Python, Django",
+    "date": "2021",
+    "url": "https://github.com/c0pper/ai-text-submission",
+    "desc": "Simple web app to collect texts. In the future it's meant to evaluate the writer style's closeness to famous writers through an AI algorithm",
+    "images": [
+        "portfolio-details-1.jpg",
+        "portfolio-details-2.jpg",
+        "portfolio-details-3.jpg",
+        "portfolio-details-2.jpg"]
+}
+
 karman_line = {
+    "title": "The Karman Line",
     "cat": "Blog",
     "date": "2020",
     "url": "http://thekarmanline.atwebpages.com/",
@@ -11,6 +77,7 @@ karman_line = {
 }
 
 win95_site = {
+    "title": "This website Windows 95ed",
     "cat": "Web Design",
     "date": "2019",
     "url": "http://martinmarotta.atwebpages.com/",
@@ -23,6 +90,7 @@ win95_site = {
 }
 
 spacex_it = {
+    "title": "SpaceX Italian Localisation",
     "cat": "Web Design, Translation",
     "date": "2019",
     "url": "http://spacexit.atwebpages.com/",
@@ -36,6 +104,7 @@ spacex_it = {
 
 
 gta_napoli = {
+    "title": "GTA Napoli",
     "cat": "Game modding",
     "date": "2017",
     "url": "https://www.facebook.com/GTAnapule/",
@@ -48,6 +117,7 @@ gta_napoli = {
 }
 
 unidia = {
+    "title": "Unidia",
     "cat": "App development",
     "date": "2018",
     "url": "http://simonemartinmarotta.atwebpages.com/#",
@@ -60,6 +130,7 @@ unidia = {
 }
 
 mirai_subs = {
+    "title": "Mirai Subtitles",
     "cat": "Translation",
     "date": "2018",
     "url": "https://pastebin.com/XiUTAPhY",
@@ -72,6 +143,7 @@ mirai_subs = {
 }
 
 clients_app = {
+    "title": "Clients App Localisation",
     "cat": "Translation",
     "date": "2019",
     "url": "https://tinyurl.com/vtgqeyp",
@@ -84,6 +156,7 @@ clients_app = {
 }
 
 nmusic_app = {
+    "title": "NMusic App Localisation",
     "cat": "Translation",
     "date": "2019",
     "url": "https://play.google.com/store/apps/details?id=com.cnj.nplayer",
