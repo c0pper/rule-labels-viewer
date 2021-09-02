@@ -219,19 +219,28 @@
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div> --> 
+        </div> -->
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row d-flex justify-content-center">
           {% for p in projects %}
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img src="{{ url_for('static', filename='img/projects/' + p[1]) }}" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="{{p[2]}}" title="More Details"><i class="bx bx-plus"></i></a>
+          <div class="col-lg-4 col-md-6" style="margin-bottom: 30px;">
+            <div class="card-deck">
+              <div class="card border-primary">
+                <a href="{{p[2]}}"><img class="card-img-top img-fluid" src="{{ url_for('static', filename='img/projects/' + p[1]) }}" alt="Card image cap"></a>
+                <div class="card-body">
+                  <h6 class="card-title">{{p[0]}}</h6>
                 </div>
               </div>
             </div>
-            <!-- {{p[1]}} -->
+          </div>
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+<!--              <div class="portfolio-wrap">-->
+<!--                <img src="{{ url_for('static', filename='img/projects/' + p[1]) }}" class="img-fluid" alt="">-->
+<!--                <div class="portfolio-links">-->
+<!--                  <a href="{{p[2]}}" title="More Details"><i class="bx bx-plus"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
           {% endfor %}
         </div>
 

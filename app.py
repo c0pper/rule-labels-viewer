@@ -34,14 +34,14 @@ lang_skills = [("english", 100), ("Russian", 70), ("SPANISH", 30), ("FRENCH", 30
 comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS", 50), ("CSS", 30)]
 
 projects = [  # Title, img, url
-    ("ZettiBotAI", "karman.png", "zettibot-ai"),
-    ("This Website", "karman.png", "personal-website"),
-    ("pyCV", "karman.png", "py-cv"),
-    ("Anime Downloader", "karman.png", "anime-downloader"),
-    ("Text Collection", "karman.png", "text-collection"),
-    (zettibot["title"], "karman.png", "karman-line"),
+    ("ZettiBotAI", "zettibot.png", "zettibot-ai"),
+    ("This Website", "personal_website.png", "personal-website"),
+    ("pyCV", "pycv.png", "py-cv"),
+    ("Anime Downloader", "animedownloader.png", "anime-downloader"),
+    # ("Text Collection", "karman.png", "text-collection"),
+    ("The Karman Line", "karman.png", "karman-line"),
     ("This website. Like it's '95.", "win95.png", "win95-site"),
-    ("SpaceX Website italian localisation", "spacex.png", "spacex-it"),
+    ("SpaceX Website italian localisation", "starman.png", "spacex-it"),
     ("GTA Napoli", "gta.png", "gta-napoli"),
     ("Unidia", "unidia.png", "unidia"),
     ("'Mirai' Substitles", "mirai.png", "mirai-subs"),
