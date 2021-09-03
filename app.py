@@ -34,19 +34,19 @@ lang_skills = [("english", 100), ("Russian", 70), ("SPANISH", 30), ("FRENCH", 30
 comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS", 50), ("CSS", 30)]
 
 projects = [  # Title, img, url
-    ("ZettiBotAI", "zettibot.png", "zettibot-ai"),
-    ("This Website", "personal_website.png", "personal-website"),
-    ("pyCV", "pycv.png", "py-cv"),
-    ("Anime Downloader", "animedownloader.png", "anime-downloader"),
+    (zettibot["title"], "zettibot.png", "zettibot-ai"),
+    (pers_website["title"], "personal_website.png", "personal-website"),
+    (python_cv["title"], "pycv.png", "py-cv"),
+    (anime_scraper["title"], "animedownloader.png", "anime-downloader"),
     # ("Text Collection", "karman.png", "text-collection"),
-    ("The Karman Line", "karman.png", "karman-line"),
-    ("This website. Like it's '95.", "win95.png", "win95-site"),
-    ("SpaceX Website italian localisation", "starman.png", "spacex-it"),
-    ("GTA Napoli", "gta.png", "gta-napoli"),
-    ("Unidia", "unidia.png", "unidia"),
-    ("'Mirai' Substitles", "mirai.png", "mirai-subs"),
-    ("'Clients' localisation", "clients.png", "clients-app"),
-    ("'NMusic' localisation", "nmusic.png", "nmusic-app")
+    (karman_line["title"], "karman.png", "karman-line"),
+    (win95_site["title"], "win95.png", "win95-site"),
+    (spacex_it["title"], "starman.png", "spacex-it"),
+    (gta_napoli["title"], "gta.png", "gta-napoli"),
+    (unidia["title"], "unidia.png", "unidia"),
+    (mirai_subs["title"], "mirai.png", "mirai-subs"),
+    (clients_app["title"], "clients.png", "clients-app"),
+    (nmusic_app["title"], "nmusic.png", "nmusic-app")
 ]
 
 
@@ -80,7 +80,7 @@ def home():
 @app.route("/zettibot-ai")
 def zettibot_ai():
     return render_template(
-        "karman-line.html",
+        "project_base.html",
         title=zettibot["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -92,7 +92,7 @@ def zettibot_ai():
 @app.route("/personal-website")
 def personal_website():
     return render_template(
-        "karman-line.html",
+        "project_base.html",
         title=pers_website["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -104,7 +104,7 @@ def personal_website():
 @app.route("/py-cv")
 def pyCV():
     return render_template(
-        "karman-line.html",
+        "project_base.html",
         title=python_cv["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -116,7 +116,7 @@ def pyCV():
 @app.route("/anime-downloader")
 def anime_downloader():
     return render_template(
-        "karman-line.html",
+        "project_base.html",
         title=anime_scraper["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -128,7 +128,7 @@ def anime_downloader():
 @app.route("/text-collection")
 def text_collection():
     return render_template(
-        "karman-line.html",
+        "project_base.html",
         title=text_collect["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -140,7 +140,7 @@ def text_collection():
 @app.route("/karman-line")
 def karman():
     return render_template(
-        "karman-line.html",
+        "project_base.html",
         title=karman_line["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -152,7 +152,7 @@ def karman():
 @app.route("/win95-site")
 def win95():
     return render_template(
-        "win95-site.html",
+        "project_base.html",
         title=win95_site["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -164,7 +164,7 @@ def win95():
 @app.route("/spacex-it")
 def spacex():
     return render_template(
-        "spacex-it.html",
+        "project_base.html",
         title=spacex_it["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -176,7 +176,7 @@ def spacex():
 @app.route("/gta-napoli")
 def gta():
     return render_template(
-        "gta-napoli.html",
+        "project_base.html",
         title=gta_napoli["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -188,7 +188,7 @@ def gta():
 @app.route("/unidia")
 def uni():
     return render_template(
-        "unidia.html",
+        "project_base.html",
         title=unidia["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -200,7 +200,7 @@ def uni():
 @app.route("/mirai-subs")
 def mirai():
     return render_template(
-        "mirai-subs.html",
+        "project_base.html",
         title=mirai_subs["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -212,7 +212,7 @@ def mirai():
 @app.route("/clients-app")
 def clients():
     return render_template(
-        "clients-app.html",
+        "project_base.html",
         title=clients_app["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
@@ -224,7 +224,7 @@ def clients():
 @app.route("/nmusic-app")
 def nmusic():
     return render_template(
-        "nmusic-app.html",
+        "project_base.html",
         title=nmusic_app["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,

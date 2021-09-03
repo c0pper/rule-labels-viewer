@@ -12,7 +12,7 @@ zettibot = {
 }
 
 pers_website = {
-    "title": "This website",
+    "title": "This Website",
     "cat": "Web design",
     "date": "2021",
     "url": "https://simone-martin.herokuapp.com/",
@@ -77,7 +77,7 @@ karman_line = {
 }
 
 win95_site = {
-    "title": "This website Windows 95ed",
+    "title": "This Website Windows 95ed",
     "cat": "Web Design",
     "date": "2019",
     "url": "http://martinmarotta.atwebpages.com/",
@@ -146,7 +146,7 @@ clients_app = {
     "title": "Clients App Localisation",
     "cat": "Translation",
     "date": "2019",
-    "url": "https://tinyurl.com/vtgqeyp",
+    "url": "https://apps.apple.com/us/app/clients-your-client-database/id1188807211",
     "desc": "Clients is an app for storing and operating customer data in order to organize client communication in a completely new way.",
     "images": [
         "portfolio-details-1.jpg",
