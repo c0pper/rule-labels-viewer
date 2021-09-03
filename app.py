@@ -35,20 +35,32 @@ comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS"
 
 projects = [  # Title, img, url
     (mirco["title"], "zettibot.png", mirco["internal_url"]),
-    (zettibot["title"], "zettibot.png", "zettibot-ai"),
-    (pers_website["title"], "personal_website.png", "personal-website"),
-    (python_cv["title"], "pycv.png", "py-cv"),
-    (anime_scraper["title"], "animedownloader.png", "anime-downloader"),
+    (zettibot["title"], "zettibot.png", zettibot["internal_url"]),
+    (pers_website["title"], "personal_website.png", pers_website["internal_url"]),
+    (python_cv["title"], "pycv.png", python_cv["internal_url"]),
+    (anime_scraper["title"], "animedownloader.png", anime_scraper["internal_url"]),
     # ("Text Collection", "karman.png", "text-collection"),
-    (karman_line["title"], "karman.png", "karman-line"),
-    (win95_site["title"], "win95.png", "win95-site"),
-    (spacex_it["title"], "starman.png", "spacex-it"),
-    (gta_napoli["title"], "gta.png", "gta-napoli"),
-    (unidia["title"], "unidia.png", "unidia"),
-    (mirai_subs["title"], "mirai.png", "mirai-subs"),
-    (clients_app["title"], "clients.png", "clients-app"),
-    (nmusic_app["title"], "nmusic.png", "nmusic-app")
+    (karman_line["title"], "karman.png", karman_line["internal_url"]),
+    (win95_site["title"], "win95.png", win95_site["internal_url"]),
+    (spacex_it["title"], "starman.png", spacex_it["internal_url"]),
+    (gta_napoli["title"], "gta.png", gta_napoli["internal_url"]),
+    (unidia["title"], "unidia.png", unidia["internal_url"]),
+    (mirai_subs["title"], "mirai.png", mirai_subs["internal_url"]),
+    (clients_app["title"], "clients.png", clients_app["internal_url"]),
+    (nmusic_app["title"], "nmusic.png", nmusic_app["internal_url"])
 ]
+
+
+def build_projects_navmenu():
+    projects_navmenu = [("/", "bx bx-home", "Home")]
+    for p in projects:
+        nav_url = p[2]
+        nav_icon = "bi bi-box-seam"
+        nav_title = p[0]
+        nav_element = (nav_url, nav_icon, nav_title)
+        projects_navmenu.append(nav_element)
+
+    return(projects_navmenu)
 
 
 def calculateAge(birthDate):
@@ -85,7 +97,7 @@ def mirco_website():
         title=mirco["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=mirco
     )
 
@@ -97,7 +109,7 @@ def zettibot_ai():
         title=zettibot["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=zettibot
     )
 
@@ -109,7 +121,7 @@ def personal_website():
         title=pers_website["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=pers_website
     )
 
@@ -121,7 +133,7 @@ def pyCV():
         title=python_cv["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=python_cv
     )
 
@@ -133,7 +145,7 @@ def anime_downloader():
         title=anime_scraper["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=anime_scraper
     )
 
@@ -145,7 +157,7 @@ def text_collection():
         title=text_collect["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=text_collect
     )
 
@@ -157,7 +169,7 @@ def karman():
         title=karman_line["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=karman_line
     )
 
@@ -169,7 +181,7 @@ def win95():
         title=win95_site["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=win95_site
     )
 
@@ -181,7 +193,7 @@ def spacex():
         title=spacex_it["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=spacex_it
     )
 
@@ -193,7 +205,7 @@ def gta():
         title=gta_napoli["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=gta_napoli
     )
 
@@ -205,7 +217,7 @@ def uni():
         title=unidia["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=unidia
     )
 
@@ -217,7 +229,7 @@ def mirai():
         title=mirai_subs["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=mirai_subs
     )
 
@@ -229,7 +241,7 @@ def clients():
         title=clients_app["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=clients_app
     )
 
@@ -241,7 +253,7 @@ def nmusic():
         title=nmusic_app["title"],
         copyright_year=current_year,
         social_buttons=social_buttons,
-        navmenu=navmenu,
+        navmenu=build_projects_navmenu(),
         data=nmusic_app
     )
 

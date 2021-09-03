@@ -4,7 +4,7 @@ mirco = {
     "date": "2021",
     "url": "http://mirc0.atwebpages.com/",
     "internal_url": "/mirco",
-    "desc": "",
+    "desc": "Mockup platform for an Expert AI project. Meant to be a user interface for the phone operator to check what happened in past calls and how the credit recovery is going with the debtor.",
     "images": [
         "portfolio-details-1.jpg",
         "portfolio-details-2.jpg",
@@ -18,7 +18,7 @@ zettibot = {
     "date": "2020",
     "url": "https://telegram.me/zettibot",
     "internal_url": "/zettibot-ai",
-    "desc": "Check out my insulting bot on Telegram @zettibot",
+    "desc": "A Telegram bot based on a real person. It is constantly learning to interact with its users, even right now.",
     "images": [
         "portfolio-details-1.jpg",
         "portfolio-details-2.jpg",
@@ -60,7 +60,7 @@ anime_scraper = {
     "date": "2021",
     "url": "https://github.com/c0pper/animewatdownloader",
     "internal_url": "/anime-downloader",
-    "desc": "A simple script that scrapes episodes download links from a specific website and donwloads them, starting from a list of URLs.",
+    "desc": "A simple script that scrapes episodes download links from a specific website and downloads them, starting from a list of URLs.",
     "images": [
         "portfolio-details-1.jpg",
         "portfolio-details-2.jpg",
