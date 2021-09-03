@@ -34,6 +34,7 @@ lang_skills = [("english", 100), ("Russian", 70), ("SPANISH", 30), ("FRENCH", 30
 comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS", 50), ("CSS", 30)]
 
 projects = [  # Title, img, url
+    (mirco["title"], "zettibot.png", mirco["internal_url"]),
     (zettibot["title"], "zettibot.png", "zettibot-ai"),
     (pers_website["title"], "personal_website.png", "personal-website"),
     (python_cv["title"], "pycv.png", "py-cv"),
@@ -77,7 +78,19 @@ def home():
     )
 
 
-@app.route("/zettibot-ai")
+@app.route(mirco["internal_url"])
+def mirco_website():
+    return render_template(
+        "project_base.html",
+        title=mirco["title"],
+        copyright_year=current_year,
+        social_buttons=social_buttons,
+        navmenu=navmenu,
+        data=mirco
+    )
+
+
+@app.route(zettibot["internal_url"])
 def zettibot_ai():
     return render_template(
         "project_base.html",
@@ -89,7 +102,7 @@ def zettibot_ai():
     )
 
 
-@app.route("/personal-website")
+@app.route(pers_website["internal_url"])
 def personal_website():
     return render_template(
         "project_base.html",
@@ -101,7 +114,7 @@ def personal_website():
     )
 
 
-@app.route("/py-cv")
+@app.route(python_cv["internal_url"])
 def pyCV():
     return render_template(
         "project_base.html",
@@ -113,7 +126,7 @@ def pyCV():
     )
 
 
-@app.route("/anime-downloader")
+@app.route(anime_scraper["internal_url"])
 def anime_downloader():
     return render_template(
         "project_base.html",
@@ -125,7 +138,7 @@ def anime_downloader():
     )
 
 
-@app.route("/text-collection")
+@app.route(text_collect["internal_url"])
 def text_collection():
     return render_template(
         "project_base.html",
@@ -137,7 +150,7 @@ def text_collection():
     )
 
 
-@app.route("/karman-line")
+@app.route(karman_line["internal_url"])
 def karman():
     return render_template(
         "project_base.html",
@@ -149,7 +162,7 @@ def karman():
     )
 
 
-@app.route("/win95-site")
+@app.route(win95_site["internal_url"])
 def win95():
     return render_template(
         "project_base.html",
@@ -161,7 +174,7 @@ def win95():
     )
 
 
-@app.route("/spacex-it")
+@app.route(spacex_it["internal_url"])
 def spacex():
     return render_template(
         "project_base.html",
@@ -173,7 +186,7 @@ def spacex():
     )
 
 
-@app.route("/gta-napoli")
+@app.route(gta_napoli["internal_url"])
 def gta():
     return render_template(
         "project_base.html",
@@ -185,7 +198,7 @@ def gta():
     )
 
 
-@app.route("/unidia")
+@app.route(unidia["internal_url"])
 def uni():
     return render_template(
         "project_base.html",
@@ -197,7 +210,7 @@ def uni():
     )
 
 
-@app.route("/mirai-subs")
+@app.route(mirai_subs["internal_url"])
 def mirai():
     return render_template(
         "project_base.html",
@@ -209,7 +222,7 @@ def mirai():
     )
 
 
-@app.route("/clients-app")
+@app.route(clients_app["internal_url"])
 def clients():
     return render_template(
         "project_base.html",
@@ -221,7 +234,7 @@ def clients():
     )
 
 
-@app.route("/nmusic-app")
+@app.route(nmusic_app["internal_url"])
 def nmusic():
     return render_template(
         "project_base.html",
