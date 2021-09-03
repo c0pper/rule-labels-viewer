@@ -4,7 +4,7 @@ mirco = {
     "date": "2021",
     "url": "http://mirc0.atwebpages.com/",
     "internal_url": "/mirco",
-    "desc": "Mockup platform for an Expert AI project. Meant to be a user interface for the phone operator to check what happened in past calls and how the process of recovering credits from the debtos is going.",
+    "desc": "Mockup platform for an Expert AI project. Meant to be a user interface for the phone operator to check what happened in past calls and how the process of recovering credits from the debtors is going.",
     "images": [
         "mirco1.jpeg",
         "mirco2.jpeg",
