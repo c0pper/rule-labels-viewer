@@ -122,15 +122,11 @@ w_experiences = [
         "institution": "Brighton Language College",
         "location": ", Brighton (UK)",
         "points": [
-            "Teacher assistance",
-            "Groups coordination",
-            "Orientation",
-            "Cultural mediation",
+            "Teacher assistance and children supervision",
+            "Orientation and groups coordination",
             "Excursions guide",
-            "Children supervision",
             "Lesson planning",
             "Attendance keeping",
-            "Database updating"
         ],
         "url": "https://www.stgiles-international.com/"
     },
