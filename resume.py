@@ -2,7 +2,7 @@ ed_experiences = [
     {
         "name": "MASTER'S DEGREE - TECHNICAL TRANSLATION",
         "date": "2017 - 2020",
-        "institution": "Università degli Studi di Naples L’Orientale",
+        "institution": "Università degli Studi di Naples L'Orientale",
         "location": ", Naples (IT)",
         "points": [
             "Graduated 110/110",
@@ -15,20 +15,20 @@ ed_experiences = [
     {
         "name": "APPLE IOS FOUNDATION PROGRAM",
         "date": "2018",
-        "institution": "Università degli Studi di Naples L’Orientale",
+        "institution": "Università degli Studi di Naples L'Orientale",
         "location": ", Naples (IT)",
         "points": [
             "First place in admission list",
             "Developement of publishable app in 1 month (Swift)",
-            "Demo of the product at European Researchers’ Night ‘19, national science fair “Futuro Remoto” and Universirty of Westminster (London)",
+            "Demo of the product at European Researchers' Night '19, national science fair 'Futuro Remoto' and Universirty of Westminster (London)",
             "Honing of soft / hard skills and team working"
         ],
-        "url": "https://www.unior.it/" 
+        "url": "https://www.unior.it/"
     },
     {
         "name": "FIT - INITIAL FORMATION AND TRAINEESHIP FOR TEACHERS",
         "date": "2018",
-        "institution": "Università degli Studi di Naples L’Orientale",
+        "institution": "Università degli Studi di Naples L'Orientale",
         "location": ", Naples (IT)",
         "points": [
             "Antropology",
@@ -41,7 +41,7 @@ ed_experiences = [
     {
         "name": "BA - LINGUISTIC AND CULTURAL MEDIATION",
         "date": "2012 - 2016",
-        "institution": "Università degli Studi di Naples L’Orientale",
+        "institution": "Università degli Studi di Naples L'Orientale",
         "location": ", Naples (IT)",
         "points": [
             "Graduated 102/110",
