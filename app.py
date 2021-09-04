@@ -33,21 +33,21 @@ navmenu = [
 lang_skills = [("english", 100), ("Russian", 70), ("SPANISH", 30), ("FRENCH", 30), ("JAPANESE", 20)]
 comp_skills = [("PHOTOSHOP", 80), ("HTML", 70), ("PYTHON", 50), ("WORDPRESS/CMS", 50), ("CSS", 30)]
 
-projects = [  # Title, img, url
-    (mirco["title"], "mirco.png", mirco["internal_url"]),
-    (zettibot["title"], "zettibot.png", zettibot["internal_url"]),
-    (pers_website["title"], "personal_website.png", pers_website["internal_url"]),
-    (python_cv["title"], "pycv.png", python_cv["internal_url"]),
-    (anime_scraper["title"], "animedownloader.png", anime_scraper["internal_url"]),
+projects = [  # Title, img, url, cat
+    (mirco["title"], "mirco.png", mirco["internal_url"], mirco["cat"]),
+    (zettibot["title"], "zettibot.png", zettibot["internal_url"], zettibot["cat"]),
+    (pers_website["title"], "personal_website.png", pers_website["internal_url"], pers_website["cat"]),
+    (python_cv["title"], "pycv.png", python_cv["internal_url"], python_cv["cat"]),
+    (anime_scraper["title"], "animedownloader.png", anime_scraper["internal_url"], anime_scraper["cat"]),
     # ("Text Collection", "karman.png", "text-collection"),
-    (karman_line["title"], "karman.png", karman_line["internal_url"]),
-    (win95_site["title"], "win95.png", win95_site["internal_url"]),
-    (spacex_it["title"], "starman.png", spacex_it["internal_url"]),
-    (gta_napoli["title"], "gta.png", gta_napoli["internal_url"]),
-    (unidia["title"], "unidia.png", unidia["internal_url"]),
-    (mirai_subs["title"], "mirai.png", mirai_subs["internal_url"]),
-    (clients_app["title"], "clients.png", clients_app["internal_url"]),
-    (nmusic_app["title"], "nmusic.png", nmusic_app["internal_url"])
+    (karman_line["title"], "karman.png", karman_line["internal_url"], karman_line["cat"]),
+    (win95_site["title"], "win95.png", win95_site["internal_url"], win95_site["cat"]),
+    (spacex_it["title"], "starman.png", spacex_it["internal_url"], spacex_it["cat"]),
+    (gta_napoli["title"], "gta.png", gta_napoli["internal_url"], gta_napoli["cat"]),
+    (unidia["title"], "unidia.png", unidia["internal_url"], unidia["cat"]),
+    (mirai_subs["title"], "mirai.png", mirai_subs["internal_url"], mirai_subs["cat"]),
+    (clients_app["title"], "clients.png", clients_app["internal_url"], clients_app["cat"]),
+    (nmusic_app["title"], "nmusic.png", nmusic_app["internal_url"], nmusic_app["cat"])
 ]
 
 

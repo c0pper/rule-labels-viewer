@@ -63,7 +63,8 @@ w_experiences = [
             "Identification of logical patterns underlying the language",
             "Improvement of the basic technology from a linguistic point of view",
             "Tests and validations to verify the effectiveness of the implemented solution",
-            "Identification of suitable solutions for clients in the field of Natural Language Processing"
+            "Identification of suitable solutions for clients in the field of Natural Language Processing",
+            "App mockup deisgn and creation"
         ],
         "url": "https://www.expert.ai/"
     },
