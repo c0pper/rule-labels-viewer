@@ -128,7 +128,7 @@ w_experiences = [
             "Lesson planning",
             "Attendance keeping",
         ],
-        "url": "https://www.stgiles-international.com/"
+        "url": "https://www.brightonlc.co.uk/"
     },
     {
         "name": "RECEPTION DESK",
