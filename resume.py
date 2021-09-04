@@ -52,6 +52,7 @@ ed_experiences = [
         "url": "https://www.unior.it/"
     }
 ]
+
 w_experiences = [
     {
         "name": "KNOWLEDGE ENGINEER",
@@ -143,4 +144,55 @@ w_experiences = [
         ],
         "url": "http://www.prefettura.it/napoli/contenuti/Area_iv_immigrazione-419618.htm"
     }
+]
+
+certifications = [
+    {
+        "title": "EUROPEAN RESEARCHERS' NIGHT 2019",
+        "url": "https://drive.google.com/file/d/1KMGWOVJ3KGgo-g9LoJn3EyCDlUAggezU/view?usp=sharing"
+    },
+    {
+        "title": "REFERENCE LETTER - ST. GILES",
+        "url": "https://drive.google.com/file/d/15r-UkVbtO3e2mYjBKJVaPIW1IDocZ4gE/view?usp=sharing"
+    },
+    {
+        "title": "SAFEGUARDING FOR ACTIVITY STAFF -   ACCREDITATION UK",
+        "url": "https://drive.google.com/file/d/15gPcipxK7_0yEsP7nuQL7EnmrnmwJLzG/view?usp=sharing"
+    },
+    {
+        "title": "CRIMINAL RECORDS CHECK",
+        "url": "https://drive.google.com/file/d/1DGdDe3azhelBMfUX2Np8I93r-7ZwcEtn/view?usp=sharing"
+    },
+    {
+        "title": "CHILDREN PROTECTION AND SAFEGARDING - CHILDREN FIRST",
+        "url": "https://tinyurl.com/y5qwmegu"
+    },
+    {
+        "title": "REFERENCE LETTER  - BRIGHTON LANGUAGE COLLEGE",
+        "url": "http://tinyurl.com/y8k2lkrv"
+    },
+    {
+        "title": "FUTURO REMOTO - SCIENCE FAIR",
+        "url": "https://tinyurl.com/yaa6x3gk"
+    },
+    {
+        "title": "IOS FOUNDATION PROGRAM",
+        "url": "http://tinyurl.com/ydajqmof"
+    },
+    {
+        "title": "TRADOS COURSE CERTIFICATE",
+        "url": "http://tinyurl.com/yb8v9oex"
+    },
+    {
+        "title": "TRADOS STUDIO SEMINAR",
+        "url": "http://tinyurl.com/y75qfy65"
+    },
+    {
+        "title": "BA DEGREE",
+        "url": "http://tinyurl.com/y7v83bra"
+    },
+    {
+        "title": "MASTER'S DEGREE",
+        "url": "https://drive.google.com/file/d/1Y7WKmsd5AXBpEfEIJhlmf-LF38ISwCsZ/view?usp=sharing"
+    },
 ]
