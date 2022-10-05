@@ -39,22 +39,10 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="{{ url_for('static', filename='img/profile-img.jpg') }}" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="/">Simone Martin</a></h1>
-        <div class="social-links mt-3 text-center">
-          {% for b in social_buttons %}
-            <a href="{{b[0]}}" target="_blank" class="{{b[1]}}"><i class="{{b[2]}}"></i></a>
-          {% endfor %}
-        </div>
+        <h1 class="text-light"><a href="/">Rule labels</a></h1>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-            {% for l in navmenu %}
-                <li><a href="{{l[0]}}" class="nav-link scrollto active"><i class="{{l[1]}}"></i> <span>{{l[2]}}</span></a></li>
-            {% endfor %}
-        </ul>
-      </nav><!-- .nav-menu -->
+
     </div>
   </header><!-- End Header -->
 
